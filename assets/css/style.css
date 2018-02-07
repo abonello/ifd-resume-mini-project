@@ -29,6 +29,10 @@ body {
     background-color: #9b59b6;
 }
 
+.bg-color-contact {
+    background-color: #ffffff;
+}
+
 .ui-menu-color-home {
     background-color: #e67e22;
 }
@@ -342,12 +346,40 @@ footer .cv-pdf i:hover {
     margin: 40px 20px;
 }
 
+/*-----------------------------------------------------Contact---*/
+.contact-heading {
+    font-family: "Exo", sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.center-form {
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+button[type="submit"] {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    background-color: #e84610;
+    color: #fafafa;
+}
+
 
 /*-----------------------------------------------------Media Queries---*/
 @media(min-width: 992px){
     .section-column {
         padding: 0 30px 30px;
         float: none;
-        display: table-cell;  /* Ensures we get equal height regardless of the content 
+        display: table-cell;  /* Ensures we get equal height regardless of the content */
+    }
+    
+    .center-form {
+        padding-top: 30px;
+        min-height: 240px;
+        margin: 0 auto;
+        max-width: 50%;
     }
 }
