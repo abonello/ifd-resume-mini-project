@@ -76,9 +76,6 @@ function fetchGitHubInformation(event) {
                 } else if (errorResponse.status === 403) {  // If quota is exceeded - Forbidden status
                     var resetTime = new Date(errorResponse.getResponseHeader('X-RateLimit-Reset')*1000);
                     $("#gh-user-data").html(`<h4>Too many requests, please wait until ${resetTime.toLocaleTimeString()}</h4>`);
-                    
-                    
-                    
                 } else {
                     console.log(errorResponse);
                     $("#gh-user-data").html(
